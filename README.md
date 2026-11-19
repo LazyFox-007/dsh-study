@@ -79,3 +79,6 @@ MIT，见 [LICENSE](LICENSE)。
 
 教学中使用的第三方插件 `dsh-learnharness` 是 **AGPL-3.0**，本仓库**不包含**它的代码，
 只提供安装说明。两者在同一个 DSH 里独立运行，互不链接。
+
+为什么"依赖"而不"搬"、什么情况下才会出问题、真要 vendor 该怎么做——
+单独写了一篇：[docs/license.md](docs/license.md)。
