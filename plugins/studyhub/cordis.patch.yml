@@ -1,0 +1,21 @@
+# dsh-studyhub 的 bundle patch 层（随包发布）。
+#
+# 装进 profile 的 dsh.profile.bundles 之后，这一层会自动展开，不需要手改
+# profile 自己的 cordis.patch.yml——插件管理器负责把它接上去。
+#
+# 这里写的是**默认值**：全部可选，删掉也能跑。改这里要重启 DSH。
+- insert:
+    - id: studyhub
+      name: 'dsh-studyhub'
+      config:
+        # 学习平台的服务端目录（里面有 server.py）
+        platformDir: 'C:\StudyAI\_webapp'
+        # Python 解释器；留空则用 PATH 里的 python
+        python: 'python'
+        # 首选端口（实际被占用时会顺着 8777..8788 往后找）
+        port: 8777
+        # DSH 启动后自动探活/拉起服务
+        autoStart: true
+        # 传给 server.py 的额外参数。--ide = 挂上「练习区」（保存 + 运行 Python）
+        # 注意：server.py 不接受 --port，端口是它自己扫的。
+        extraArgs: ['--ide']
