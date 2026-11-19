@@ -18,7 +18,7 @@
 |---|---|---|---|
 | 1 | **本插件** `studyhub` | 材料通道 + 右栏讲义 + 划词 + 语言包/私有库 | 本仓库 |
 | 2 | **教学法插件** `dsh-learnharness` | 探底 / 依赖图 / 承诺答案键 / 判分 | npm，AGPL-3.0，**独立安装** |
-| 3 | **学习平台** `agent-learning-platform` | 讲义、全文搜索、练习区（能跑代码） | 另一个仓库（Python） |
+| 3 | **学习平台** `agent-learning-platform` | 讲义（37 章随仓库提供）、全文搜索、练习区 | [Gitee](https://gitee.com/haveink/agent-learning-platform) · [GitHub](https://github.com/LazyFox-007/Agent-Learning) |
 
 **一步步的安装说明 → [docs/setup.md](docs/setup.md)**
 **先跑一次环境自检 → `powershell -ExecutionPolicy Bypass -File scripts/check-env.ps1`**（只检查、不改你的环境）

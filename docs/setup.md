@@ -6,7 +6,7 @@
 |---|---|---|---|
 | 1 | **本插件** `studyhub` | 材料通道 + 右栏讲义 + 划词 + 语言包/私有库 | 本仓库 `plugins/studyhub` |
 | 2 | **教学法插件** `dsh-learnharness` | 探底 / 依赖图 / 承诺答案键 / 判分 | npm（AGPL-3.0，**独立安装**，不在本仓库） |
-| 3 | **学习平台** `agent-learning-platform` | 讲义、全文搜索、练习区（能跑代码） | 另一个仓库（Python，零第三方依赖） |
+| 3 | **学习平台** `agent-learning-platform` | 讲义、全文搜索、练习区（能跑代码） | [Gitee](https://gitee.com/haveink/agent-learning-platform) · [GitHub](https://github.com/LazyFox-007/Agent-Learning) |
 
 > 本插件只负责"接"，不含讲义内容。没有第 3 项，工具会如实报"平台不在线"。
 
@@ -15,10 +15,17 @@
 ## 一、装平台（第 3 项）
 
 ```powershell
-git clone <agent-learning-platform 的地址> C:\StudyAI
+# Gitee（国内快）
+git clone https://gitee.com/haveink/agent-learning-platform.git C:\StudyAI
+# 或 GitHub 镜像
+# git clone https://github.com/LazyFox-007/Agent-Learning.git C:\StudyAI
+
 cd C:\StudyAI\_webapp
 python server.py --ide          # 第一次手动起一次，确认能开 http://127.0.0.1:8777/
 ```
+
+只需 **Python 3.8+，不用 `pip install` 任何东西**。**37 章课程讲义随仓库一起提供**（约 25 MB），
+clone 下来就有材料，不需要另外下载。
 
 要 Python 3.11+；`--ide` 才挂练习区（能跑代码）。看到 `本机访问 : http://127.0.0.1:8777/` 就可以了，
 按 Ctrl+C 停掉——之后由插件托管。
